@@ -25,10 +25,6 @@ jobs:
       run: npm run test:unit
     - name: Display SoftUni username 
       run: echo "milen92sl"
-    - name: Install playwright dependencies 
-      run: npx run install
-    - name: Run the UI tests
-      run: npm run test:ui
 
   run-ui-tests:
     needs: build_test
